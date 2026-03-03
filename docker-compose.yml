@@ -4,8 +4,4 @@ services:
   api:
     build: .
     container_name: 4ps_backend
-    restart: always # O contêiner liga sozinho se a VPS reiniciar
-    ports:
-      - "8000:8000"
-    env_file:
-      - .env # Ele vai puxar as variáveis do seu arquivo .env local ou da VPS
+    restart: always

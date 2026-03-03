@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from app.core.config import settings
 from app.core.database import supabase
-from app.routers import auth, companies, finance 
+from app.routers import auth
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
