@@ -5,7 +5,6 @@ from app.core.config import settings
 supabase: Client = create_client(settings.SUPABASE_URL, settings.SUPABASE_KEY)
 
 # Cliente Admin (Usa a chave service_role - IGNORA O RLS)
-# ATENÇÃO: Nunca envie essa chave para o Frontend. Ela só vive no Backend.
 if not settings.SUPABASE_SERVICE_ROLE_KEY:
     raise ValueError("⚠️ SUPABASE_SERVICE_ROLE_KEY não encontrada no .env!")
 
