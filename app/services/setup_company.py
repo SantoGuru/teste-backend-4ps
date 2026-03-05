@@ -1,6 +1,6 @@
 from app.core.database import supabase_admin 
 
-def setup_new_company(user_id: str, company_name: str, cnpj: str = None) -> str:
+def create_company_ecosystem(user_id: str, company_name: str, cnpj: str = None) -> str:
     """
     Cria a empresa e configura todo o ecossistema padrão 4Ps.
     """

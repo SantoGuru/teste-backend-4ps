@@ -1,10 +1,10 @@
 from pydantic import BaseModel
 from typing import Optional
 
-class CompanyCreateRequest(BaseModel):
+class CompanyCreate(BaseModel):
     company_name: str
     cnpj: Optional[str] = None
 
-class CompanyCreatedResponse(BaseModel):
+class CompanySetupResponse(BaseModel):
     company_id: str
     message: str
